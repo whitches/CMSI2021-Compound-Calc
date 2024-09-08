@@ -22,6 +22,6 @@ function output() {
 
   textOutput.textContent = `Final Balance: ${(
     bal *
-    (1 + rate / 100 / 12 / apptime) ** (Math.floor(months) / apptime)
+    (1 + rate / 100 / 12 * apptime) ** (Math.floor(months) / apptime)
   ).toFixed(2)}`;
 }
