@@ -1,17 +1,13 @@
 {
-  "name": "html-css",
+  "name": "compound calculator",
   "version": "1.0.0",
-  "description": "A template for HTML and CSS",
+  "description": "Homework 1 for CMSI 2021",
   "main": "index.html",
   "scripts": {
     "start": "serve"
   },
-  "keywords": [
-    "html",
-    "css"
-  ],
-  "author": "Ives van Hoorne",
-  "license": "MIT",
+  "keywords": ["html", "css", "js"],
+  "author": "Ari",
   "devDependencies": {
     "serve": "11.2.0"
   }
