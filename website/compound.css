@@ -11,6 +11,7 @@ body {
   background-image: linear-gradient(white, white, rgb(241, 243, 246));
   max-width: 100%;
   position: relative;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -70,6 +71,8 @@ main {
   text-align: center;
   line-height: 1.8;
   grid-templace-columns: 7em auto;
+  overflow-y: hidden;
+  justify-content: center;
 }
 
 img {
