@@ -1,27 +1,25 @@
-const balBox = document.querySelector("#stBal");
-balBox.addEventListener("input", output);
+const balanceBox = document.querySelector("#startingBalance");
+balanceBox.addEventListener("input", output);
 
-const rateBox = document.querySelector("#intRate");
+const rateBox = document.querySelector("#interestRate");
 rateBox.addEventListener("input", output);
 
-const compBox = document.querySelector("#cmpFreq");
-compBox.addEventListener("input", output);
+const compoundBox = document.querySelector("#compoundFrequency");
+compoundBox.addEventListener("input", output);
 
-const monBox = document.querySelector("#months");
-monBox.addEventListener("input", output);
+const monthBox = document.querySelector("#months");
+monthBox.addEventListener("input", output);
 
 const textOutput = document.querySelector("#textOutput");
 
 function output() {
-  const bal = Number(balBox.value);
+  const balance = Number(balanceBox.value);
   const rate = Number(rateBox.value);
-  const apptime = Number(compBox.value);
-  const months = Number(monBox.value);
-
-  const apps = Math.floor(months / apptime);
+  const appliedTime = Number(compoundBox.value);
+  const months = Number(monthBox.value);
 
   textOutput.textContent = `Final Balance: ${(
-    bal *
-    (1 + rate / 100 / 12 * apptime) ** (Math.floor(months) / apptime)
+    balance *
+    (1 + (rate / 100 / 12) * appliedTime) ** (Math.floor(months) / appliedTime)
   ).toFixed(2)}`;
 }

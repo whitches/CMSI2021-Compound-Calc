@@ -31,14 +31,23 @@
       Calculate Compound Interest | Calculate Compound Interest | Calculate
       Compound Interest | Calculate Compound Interest
     </h2>
-    <div class="grid-container">
       <main>
+        
+        <div class="grid-container">
         <div class="grid-item">
-          <div>Initial Balance: <input id="stBal" class="hoverable" /></div>
-          <div>Annual Rate (%): <input id="intRate" class="hoverable" /></div>
+          <div>
+            Initial Balance: <input id="startingBalance" class="hoverable" />
+          </div>
+          <div>
+            Annual Rate (%): <input id="interestRate" class="hoverable" />
+          </div>
           <div>
             <label for="Compound Frequency">Compound Frequency: </label>
-            <select name="cmpFreq" id="cmpFreq" class="hoverable">
+            <select
+              name="compoundFrequency"
+              id="compoundFrequency"
+              class="hoverable"
+            >
               <option value="1">Montly</option>
               <option value="3">Quarterly</option>
               <option value="6">Bianually</option>
@@ -51,10 +60,8 @@
         </div>
         <div class="grid-item">
           <img src="big_money.png" alt="Rich man" />
-        </div>
-        <div class="grid-item">
           <img src="spongeboy.jpg" alt="Big money" />
-          <div>
+        </div>
       </main>
     </div>
     <footer>
